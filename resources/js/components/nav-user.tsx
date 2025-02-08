@@ -1,3 +1,4 @@
+import { Link } from '@inertiajs/react';
 import { ChevronsUpDown, LogOut } from 'lucide-react';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -110,8 +111,15 @@ export function NavUser({
                         </DropdownMenuGroup> */}
                         <DropdownMenuSeparator />
                         <DropdownMenuItem>
-                            <LogOut />
-                            Log out
+                            <Link
+                                method="post"
+                                href={route('logout')}
+                                as="button"
+                                className="flex w-full items-center gap-2"
+                            >
+                                <LogOut />
+                                Log out
+                            </Link>
                         </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
