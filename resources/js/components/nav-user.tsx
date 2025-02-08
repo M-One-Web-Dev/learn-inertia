@@ -1,17 +1,9 @@
-import {
-    BadgeCheck,
-    Bell,
-    ChevronsUpDown,
-    CreditCard,
-    LogOut,
-    Sparkles,
-} from 'lucide-react';
+import { ChevronsUpDown, LogOut } from 'lucide-react';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
     DropdownMenu,
     DropdownMenuContent,
-    DropdownMenuGroup,
     DropdownMenuItem,
     DropdownMenuLabel,
     DropdownMenuSeparator,
@@ -94,7 +86,7 @@ export function NavUser({
                                 <ModeToggle />
                             </div>
                         </DropdownMenuLabel>
-                        <DropdownMenuSeparator />
+                        {/* <DropdownMenuSeparator />
                         <DropdownMenuGroup>
                             <DropdownMenuItem>
                                 <Sparkles />
@@ -115,7 +107,7 @@ export function NavUser({
                                 <Bell />
                                 Notifications
                             </DropdownMenuItem>
-                        </DropdownMenuGroup>
+                        </DropdownMenuGroup> */}
                         <DropdownMenuSeparator />
                         <DropdownMenuItem>
                             <LogOut />
