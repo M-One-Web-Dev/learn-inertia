@@ -3,12 +3,7 @@ import { Head } from '@inertiajs/react';
 
 export default function Dashboard() {
     return (
-        <AuthenticatedLayout
-            breadcrumb={[
-                { name: 'Test', url: '/' },
-                { name: 'Test 1', url: '/' },
-            ]}
-        >
+        <AuthenticatedLayout>
             <Head title="Dashboard" />
 
             <div className="py-12">
