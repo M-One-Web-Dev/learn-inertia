@@ -1,7 +1,7 @@
 import { Link, usePage } from '@inertiajs/react';
 import React, { PropsWithChildren, useState } from 'react';
 
-import { AppSidebar } from '@/components/app-sidebar';
+import { AppSidebar } from '@/components/sidebar/app-sidebar';
 import {
     Breadcrumb,
     BreadcrumbItem,
