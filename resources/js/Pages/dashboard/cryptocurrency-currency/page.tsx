@@ -3,8 +3,10 @@ import { Head } from '@inertiajs/react';
 
 export default function Dashboard() {
     return (
-        <AuthenticatedLayout>
-            <Head title="Dashboard" />
+        <AuthenticatedLayout
+            breadcrumb={[{ name: 'Currency', url: '/dashboard/currency' }]}
+        >
+            <Head title="Currency" />
 
             <div className="py-12">
                 <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">

@@ -3,7 +3,9 @@ import { Head } from '@inertiajs/react';
 
 export default function Dashboard() {
     return (
-        <AuthenticatedLayout>
+        <AuthenticatedLayout
+            breadcrumb={[{ name: 'Database', url: '/dashboard/database' }]}
+        >
             <Head title="Dashboard" />
 
             <div className="py-12">
