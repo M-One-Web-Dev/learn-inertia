@@ -2,7 +2,6 @@ import {
     AudioWaveform,
     BookOpen,
     Bot,
-    Command,
     GalleryVerticalEnd,
     Settings2,
     SquareTerminal,
@@ -29,19 +28,14 @@ const data = {
     },
     teams: [
         {
-            name: 'Acme Inc',
+            name: 'Backoffice',
             logo: GalleryVerticalEnd,
-            plan: 'Enterprise',
+            plan: 'Dashboard Page for Admin',
         },
         {
-            name: 'Acme Corp.',
+            name: 'Frontpage',
             logo: AudioWaveform,
-            plan: 'Startup',
-        },
-        {
-            name: 'Evil Corp.',
-            logo: Command,
-            plan: 'Free',
+            plan: 'Page for Users',
         },
     ],
     navMain: [
