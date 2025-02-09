@@ -46,11 +46,11 @@ const data = {
             items: [
                 {
                     title: 'User',
-                    url: '#',
+                    url: '/dashboard/user',
                 },
                 {
                     title: 'Bot',
-                    url: '#',
+                    url: '/dashboard/bot',
                 },
             ],
         },
@@ -58,19 +58,19 @@ const data = {
             title: 'Programming',
             url: '#',
             icon: SquareTerminal,
-            isActive: true,
+            // isActive: true,
             items: [
                 {
                     title: 'Languange',
-                    url: '#',
+                    url: '/dashboard/languange',
                 },
                 {
                     title: 'Database',
-                    url: '#',
+                    url: '/dashboard/database',
                 },
                 {
                     title: 'Framework',
-                    url: '#',
+                    url: '/dashboard/framework',
                 },
             ],
         },
@@ -82,7 +82,7 @@ const data = {
             items: [
                 {
                     title: 'Currency',
-                    url: '#',
+                    url: '/dashboard/currency',
                 },
             ],
         },
@@ -93,7 +93,7 @@ const data = {
             items: [
                 {
                     title: 'General',
-                    url: '#',
+                    url: '/dashboard/general-setting',
                 },
             ],
         },
