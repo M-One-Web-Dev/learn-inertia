@@ -88,7 +88,6 @@ const SidebarProvider = React.forwardRef<
             [setOpenProp, open],
         );
 
-        // Helper to toggle the sidebar.
         const toggleSidebar = React.useCallback(() => {
             return isMobile
                 ? setOpenMobile((open) => !open)
