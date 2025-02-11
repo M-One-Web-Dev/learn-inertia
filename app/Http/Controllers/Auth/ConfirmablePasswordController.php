@@ -17,7 +17,6 @@ class ConfirmablePasswordController extends Controller
         return Inertia::render('Auth/ConfirmPassword');
     }
 
-    
     public function store(Request $request): RedirectResponse
     {
         if (! Auth::guard('web')->validate([
