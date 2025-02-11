@@ -18,7 +18,7 @@ class ConfirmablePasswordController extends Controller
     }
 
     /**
-     * Confirm the user's passw
+     * Confirm the user's 
      */
     public function store(Request $request): RedirectResponse
     {
