@@ -6,7 +6,7 @@ export default function Dashboard() {
         <AuthenticatedLayout
             breadcrumb={[{ name: 'User', url: '/dashboard/user' }]}
         >
-            <Head title="Dashboard - User" />
+            <Head title="User" />
 
             <div className="py-12">
                 <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
