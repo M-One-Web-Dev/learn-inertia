@@ -57,7 +57,7 @@ export function NavMain({
                                     <SidebarMenuButton
                                         tooltip={item.title}
                                         isActive={isActive || isSubmenuActive}
-                                        // className="!text-sidebar-foreground"
+                                        className=""
                                     >
                                         {item.icon && <item.icon />}
                                         <span>{item.title}</span>
