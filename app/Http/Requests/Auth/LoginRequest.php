@@ -19,9 +19,6 @@ class LoginRequest extends FormRequest
         ];
     }
 
-    /**
-     * Autentikasi pengguna.
-     */
     public function authenticate(): void
     {
         $this->ensureIsNotRateLimited();
