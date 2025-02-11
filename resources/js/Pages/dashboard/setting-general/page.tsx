@@ -8,7 +8,7 @@ export default function Dashboard() {
                 { name: 'General', url: '/dashboard/general-setting' },
             ]}
         >
-            <Head title="Dashboard" />
+            <Head title="Dashboard - Setting" />
 
             <div className="py-12">
                 <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
