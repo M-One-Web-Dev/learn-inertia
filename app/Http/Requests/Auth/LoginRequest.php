@@ -51,9 +51,6 @@ class LoginRequest extends FormRequest
         ]);
     }
 
-    /**
-     * Ambil key throttle.
-     */
     public function throttleKey(): string
     {
         return strtolower($this->input('email')) . '|' . $this->ip();
