@@ -10,9 +10,7 @@ use Illuminate\Validation\ValidationException;
 
 class LoginRequest extends FormRequest
 {
-    /**
-     * Tentukan aturan validasi untuk login.
-     */
+    
     public function rules(): array
     {
         return [
