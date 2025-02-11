@@ -36,7 +36,6 @@ class NewPasswordController extends Controller
             'email' => 'required|email',
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
-
        
         $status = Password::reset(
             $request->only('email', 'password', 'password_confirmation', 'token'),
@@ -50,7 +49,7 @@ class NewPasswordController extends Controller
             }
         );
 
-        // If the password was successfully reset, we will redirect the user back to
+        
         // the application's home authenticated view. If there is an error we can
         // redirect them back to where they came from with their error message.
         if ($status == Password::PASSWORD_RESET) {
