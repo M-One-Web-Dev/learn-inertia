@@ -23,7 +23,6 @@ class LoginRequest extends FormRequest
     {
         $this->ensureIsNotRateLimited();
 
-        // Login dengan pengecekan role
         $credentials = $this->only('email', 'password');
 
         if (!Auth::attempt($credentials, $this->boolean('remember'))) {
