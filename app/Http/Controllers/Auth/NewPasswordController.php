@@ -50,7 +50,7 @@ class NewPasswordController extends Controller
         );
 
         
-        // redirect them back to where they came from with their error message.
+
         if ($status == Password::PASSWORD_RESET) {
             return redirect()->route('login')->with('status', __($status));
         }
