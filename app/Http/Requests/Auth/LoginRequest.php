@@ -36,9 +36,6 @@ class LoginRequest extends FormRequest
         RateLimiter::clear($this->throttleKey());
     }
 
-    /**
-     * Cek apakah user sedang di-limit login-nya.
-     */
     public function ensureIsNotRateLimited(): void
     {
         if (!RateLimiter::tooManyAttempts($this->throttleKey(), 5)) {
