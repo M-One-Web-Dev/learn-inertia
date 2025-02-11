@@ -22,7 +22,7 @@ class AuthenticatedSessionController extends Controller
     }
 
     /**
-     * Proses login.
+     * 
      */
     public function store(LoginRequest $request): RedirectResponse
     {
