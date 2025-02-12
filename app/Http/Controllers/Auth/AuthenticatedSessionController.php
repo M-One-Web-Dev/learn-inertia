@@ -38,7 +38,7 @@ class AuthenticatedSessionController extends Controller
     }
 
     /**
-     * Logout user.
+     * Loer.
      */
     public function destroy(Request $request): RedirectResponse
     {
