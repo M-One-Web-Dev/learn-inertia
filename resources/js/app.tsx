@@ -4,6 +4,7 @@ import './bootstrap';
 import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { createRoot, hydrateRoot } from 'react-dom/client';
+import { Toaster } from 'sonner';
 import { ThemeProvider } from './components/theme/theme-provider';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
@@ -20,6 +21,7 @@ createInertiaApp({
             hydrateRoot(
                 el,
                 <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+                    <Toaster position="top-center" />
                     <App {...props} />
                 </ThemeProvider>,
             );
@@ -28,6 +30,7 @@ createInertiaApp({
 
         createRoot(el).render(
             <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+                <Toaster position="top-center" />
                 <App {...props} />
             </ThemeProvider>,
         );

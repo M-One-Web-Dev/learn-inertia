@@ -1,9 +1,6 @@
 import {
     AudioWaveform,
-    BookOpen,
-    Bot,
     GalleryVerticalEnd,
-    Settings2,
     SquareTerminal,
 } from 'lucide-react';
 import * as React from 'react';
@@ -39,21 +36,6 @@ const data = {
     ],
     navMain: [
         {
-            title: 'Users',
-            url: '#',
-            icon: Bot,
-            items: [
-                {
-                    title: 'User',
-                    url: '/dashboard/user',
-                },
-                {
-                    title: 'Bot',
-                    url: '/dashboard/bot',
-                },
-            ],
-        },
-        {
             title: 'Programming',
             url: '#',
             icon: SquareTerminal,
@@ -63,36 +45,10 @@ const data = {
                     title: 'Languange',
                     url: '/dashboard/languange',
                 },
-                {
-                    title: 'Database',
-                    url: '/dashboard/database',
-                },
+
                 {
                     title: 'Framework',
                     url: '/dashboard/framework',
-                },
-            ],
-        },
-
-        {
-            title: 'Crypto Currency',
-            url: '#',
-            icon: BookOpen,
-            items: [
-                {
-                    title: 'Currency',
-                    url: '/dashboard/currency',
-                },
-            ],
-        },
-        {
-            title: 'Settings',
-            url: '#',
-            icon: Settings2,
-            items: [
-                {
-                    title: 'General',
-                    url: '/dashboard/general-setting',
                 },
             ],
         },
