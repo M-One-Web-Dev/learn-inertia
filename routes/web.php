@@ -65,9 +65,38 @@ Route::middleware(['auth'])->group(function () {
 // 3. Buat FrameworkController
 // 4. Buat route group dengan 4 route (GET, POST, PUT, DELETE)
 // 5. Buat view React dengan komponen yang sama
-Route::get('/dashboard/framework', function () {
-    return Inertia::render('dashboard/programming-framework/page');
-})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware(['auth'])->group(function () {
+    // GET: Menampilkan halaman index framework
+    // URL: /dashboard/framework
+    // Controller: FrameworkController@index
+    // Name: framework.index
+    Route::get('/dashboard/framework', [FrameworkController::class, 'index'])
+        ->name('framework.index');
+
+    // POST: Menyimpan data framework baru
+    // URL: /dashboard/framework
+    // Controller: FrameworkController@store
+    // Name: framework.store
+    Route::post('/dashboard/framework', [FrameworkController::class, 'store'])
+        ->name('framework.store');
+
+    // PUT: Mengupdate data framework yang ada
+    // URL: /dashboard/framework/{framework}
+    // Parameter: ID framework
+    // Controller: FrameworkController@update
+    // Name: framework.update
+    Route::put('/dashboard/framework/{framework}', [FrameworkController::class, 'update'])
+        ->name('framework.update');
+
+    // DELETE: Menghapus data framework
+    // URL: /dashboard/framework/{framework}
+    // Parameter: ID framework
+    // Controller: FrameworkController@destroy
+    // Name: framework.destroy
+    Route::delete('/dashboard/framework/{framework}', [FrameworkController::class, 'destroy'])
+        ->name('framework.destroy');
+});
 
 // Route untuk autentikasi
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
