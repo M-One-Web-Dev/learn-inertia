@@ -132,8 +132,8 @@ export default function Dashboard({ frameworks }: Props) {
                                         <DialogHeader>
                                             <DialogTitle>
                                                 {editingId
-                                                    ? 'Edit Framework Language'
-                                                    : 'Add Framework Language'}
+                                                    ? 'Edit Framework'
+                                                    : 'Add Framework'}
                                             </DialogTitle>
                                             <DialogDescription>
                                                 Enter the Framework details
@@ -196,12 +196,12 @@ export default function Dashboard({ frameworks }: Props) {
                                 <DialogContent>
                                     <DialogHeader>
                                         <DialogTitle>
-                                            Delete Programming Language
+                                            Delete Framework details
                                         </DialogTitle>
                                         <DialogDescription>
                                             Are you sure you want to delete this
-                                            programming language? This action
-                                            cannot be undone.
+                                            Framework? This action cannot be
+                                            undone.
                                         </DialogDescription>
                                     </DialogHeader>
                                     <DialogFooter className="flex justify-end space-x-2">
