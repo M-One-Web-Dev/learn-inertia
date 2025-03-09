@@ -1,6 +1,8 @@
 <?php
 
 // Import yang diperlukan
+
+use App\Http\Controllers\FrameworkController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgrammingController;
 use Illuminate\Foundation\Application;
@@ -68,6 +70,25 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/dashboard/framework', function () {
     return Inertia::render('dashboard/programming-framework/page');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard/framework', [FrameworkController::class, 'index'])
+        ->name('framework.index');
+
+
+    Route::post('/dashboard/framework', [FrameworkController::class, 'store'])
+        ->name('framework.store');
+
+
+    Route::put('/dashboard/framework/{framework}', [FrameworkController::class, 'update'])
+        ->name('framework.update');
+
+
+    Route::delete('/dashboard/framework/{framework}', [FrameworkController::class, 'destroy'])
+        ->name('framework.destroy');
+});
+
 
 // Route untuk autentikasi
 require __DIR__.'/auth.php';
